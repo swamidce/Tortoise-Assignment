@@ -2,7 +2,7 @@
 
 # Flow
 
-## Admin
+## Brand Partner
 
 - Create plans with default benefit_percentages (10%, 15% ...)
 - Create promotions
@@ -22,13 +22,13 @@
 | 2   | 70                 | LIMIT_BY_PERIOD | null        | 25/06/22   | 26/06/22 |
 
 
-## Customers
+## User
 
-- Store customer data in customers table (Login/signup).
-- Enroll customer into any of the plans.
-- Customer can apply promotions while enrolling in the plan.
+- Store user data in user table (Login/signup).
+- Enroll user into any of the plans.
+- User can apply promotions while enrolling in the plan.
 
-### Schema for Customers
+### Schema for User
 
 | id  | name        | email           | mobile    |
 | --- | ----------- | --------------- | --------- |

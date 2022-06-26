@@ -3,7 +3,7 @@ import { query as _query } from "../../configs/db";
 const addCustomer = async (customerDetails) => {
   try {
     const { name, email, mobile } = customerDetails;
-    const query = "INSERT INTO user(name, email, mobile) VALUES($1,$2,$3)";
+    const query = "INSERT INTO users(name, email, mobile) VALUES($1,$2,$3)";
     const params = [name, email, mobile];
     await _query(query, params);
   } catch (e) {
