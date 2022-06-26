@@ -1,4 +1,4 @@
-/******* SCHEMA **********/
+/** SCHEMA **/
 
 create database assignment;
 
@@ -9,7 +9,7 @@ CREATE TYPE PromotionType as ENUM ('NONE', 'USER_LIMIT', 'TIME_LIMIT');
 
 CREATE TABLE IF NOT EXISTS plans(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(200) NOT NULL,
+    name VARCHAR(250) NOT NULL,
     amount_options integer NOT NULL,
     tenure_options integer NOT NULL,
     benefit_percentage integer DEFAULT 0,
@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS promotions(
 
 CREATE TABLE IF NOT EXISTS user(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(200) NOT NULL,
-    email VARCHAR(300) DEFAULT NULL,
-    mobile VARCHAR(300) DEFAULT NULL
+    name VARCHAR(250) NOT NULL,
+    email VARCHAR(250) DEFAULT NULL,
+    mobile VARCHAR(250) DEFAULT NULL
 );
 
 CREATE TABLE IF NOT EXISTS customerGoals(
